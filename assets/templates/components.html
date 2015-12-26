@@ -1,0 +1,176 @@
+<div id="serviceOffers" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="page-head-line">Service Offers</h4>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <input id="search" type="search" class="search form-control" placeholder="Search">
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="scrollDiv table-responsive">
+                <table id="tblServices" class="table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Service Name</th>
+                        <th>Category</th>
+                        <th>CreatedBy</th>
+                        <th>Type</th>
+                        <th>Date </th>
+                        <th># </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="serviceNeeds" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="page-head-line">Service Needs</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <input id="search" type="search" class="search form-control" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="scrollDiv table-responsive">
+                <table id="tblServices" class="table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Service Name</th>
+                        <th>Category</th>
+                        <th>CreatedBy</th>
+                        <th>Type</th>
+                        <th>Date </th>
+                        <th># </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="page-head-line">Home</h4>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="dashboard-div-wrapper bk-clr-one">
+                    <i  class="fa fa-wrench dashboard-div-icon" ></i>
+                    <div class="progress progress-striped active"></div>
+                    <h5>Services Offers </h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="dashboard-div-wrapper bk-clr-three">
+                <i  class="fa fa-plug dashboard-div-icon" ></i>
+                <div class="progress progress-striped active"></div>
+                <h5>Services Needs </h5>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="manageMyServices" class="container">
+                <div class="row">
+                    <div class="col-md-4" style="padding-top: 20px;">
+                        <div class="Compose-Message">
+                            <div id="showMsg" class="alert alert-success hiddenEle" role="alert">
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panelDesc panel-heading">
+                                    Add New Service
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label>Name : </label>
+                                        <input id="txtServiceName" type="text" class="form-control"  />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Category </label>
+                                        <select id="servicesCategory" class="form-control">
+                                            <option value="">Select Category</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Type </label>
+                                        <select id="serviceType" class="form-control">
+                                            <option value="">Select Type</option>
+                                            <option value="offer">Offer</option>
+                                            <option value="need">Need</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Description : </label>
+                                        <textarea id="txtServicesDescription" rows="9" class="form-control""></textarea>
+                                    </div>
+                                    <hr />
+                                    <a id="btnClearForm" class="btn btn-warning"><span class="glyphicon glyphicon-remove"></span> Clear </a>&nbsp;
+                                    <button id="btnSubmitService" role="add" class="btn btn-success"><span class="glyphicon glyphicon-floppy-saved"></span>  Submit </button>
+                                </div>
+                                <div class="panel-footer text-muted">
+                                    <strong>Note : </strong>Please note that we track all data so don't send any spams.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8" style="padding-top: 20px;">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    My Services
+                                </div>
+                                <div class="panel-body" style="height: 240px; overflow-x: auto;">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input id="search" type="search" class="search " placeholder="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table id="tblServicesByUser" class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>Service Name</th>
+                                            <th>Category</th>
+                                            <th>Type</th>
+                                            <th>Date </th>
+                                            <th># </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        <input id="mapSearch" class="controls" type="text" placeholder="Search Box">
+                        <div id="mapManage" class="mapManage"></div>
+                        </div>
+                </div>
+    </div>
+</div>
